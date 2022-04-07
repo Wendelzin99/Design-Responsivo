@@ -1,39 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário Oficial</title>
 </head>
+
 <body>
 
-<a href=""></a>
-    <form action = "" method="">
-        <h2>Faça contato</h2>
-        <p>Preencha todos os campos abaixo para entrar em contato conosco.</p>
-        <p>
-            <label for="nome">Seu nome:</label>
-            <input type="text" name="nome" id="nome" required minlength="3">
-        </p>
-        <p>
-            <label for="email">Seu e-mail:</label>
-            <input type="email" name="email" id="email" required>
-        </p>
-        <p>
-            <label for="assunto">Assunto do contato:</label>
-            <input type="text" name="assunto" id="assunto" required minlength="5">
-        </p>
-        <p>
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" required minlength="5"></textarea>
-        </p>
-        <p>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </p>
-    </form>
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+        <use xlink:href="#bootstrap" />
+      </svg>
+    </a>
 
-    
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="Projeto.html" class="nav-link px-2 link-secondary">Início</a></li>
+      <li><a href="FormulárioOficial.html" class="nav-link px-2 link-dark">Contato</a></li>
+      <li><a href="historia.html" class="nav-link px-2 link-dark">História</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+      <button type="button" class="btn btn-primary">Sign-up</button>
+    </div>
+  </header>
+
+  <form class="container">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Digite sua senha">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Endereço">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+
+
+  <footer>
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; Wendel's company</p>
+
+    </div>
+  </footer>
+  </div>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
 </body>
+
 </html>
